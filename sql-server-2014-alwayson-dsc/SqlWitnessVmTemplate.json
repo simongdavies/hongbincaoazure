@@ -155,7 +155,7 @@
     {
       "type": "Microsoft.Compute/availabilitySets",
       "name": "[parameters('AvailabilitySetName')]",
-      "apiVersion": "2015-05-01-preview",
+      "apiVersion": "2015-06-15",
       "location": "[parameters('location')]"
     },
     {
@@ -164,7 +164,7 @@
       "location": "[parameters('location')]",
       "dependsOn": [
       ],
-      "apiVersion": "2015-05-01-preview",
+      "apiVersion": "2015-06-15",
       "properties": {
         "ipConfigurations": [
           {
@@ -180,7 +180,7 @@
       }
     },
     {
-      "apiVersion": "2015-05-01-preview",
+      "apiVersion": "2015-06-15",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[concat(parameters('VMNamePrefix'), '0')]",
       "location": "[parameters('location')]",

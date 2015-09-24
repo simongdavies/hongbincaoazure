@@ -150,7 +150,7 @@
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
       "name": "[concat(parameters('sqlVMNamePrefix'),'0/sqlAOPrepare')]",
-      "apiVersion": "2015-05-01-preview",
+      "apiVersion": "2015-06-15",
       "location": "[parameters('location')]",
       "dependsOn": [
       ],
@@ -185,7 +185,7 @@
     {
 			"type": "Microsoft.Compute/virtualMachines/extensions",
 			"name": "[concat(parameters('sqlVMNamePrefix'),'1/CreateCluster')]",
-			"apiVersion": "2015-05-01-preview",
+			"apiVersion": "2015-06-15",
 			"location": "[parameters('location')]",
 			"dependsOn":[
 				"[concat('Microsoft.Compute/virtualMachines/',parameters('sqlVMNamePrefix'),'0/extensions/sqlAOPrepare')]"

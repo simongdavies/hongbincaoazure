@@ -175,7 +175,7 @@
       }
     },
     {
-      "apiVersion": "2015-05-01-preview",
+      "apiVersion": "2015-06-15",
       "type": "Microsoft.Network/publicIPAddresses",
       "name": "[variables('publicIPAddressName')]",
       "location": "[parameters('location')]",
@@ -189,11 +189,11 @@
     {
       "type": "Microsoft.Compute/availabilitySets",
       "name": "[parameters('AvailabilitySetName')]",
-      "apiVersion": "2015-05-01-preview",
+      "apiVersion": "2015-06-15",
       "location": "[parameters('location')]"
     },
     {
-      "apiVersion": "2015-05-01-preview",
+      "apiVersion": "2015-06-15",
       "name": "[variables('publiclbName')]",
       "type": "Microsoft.Network/loadBalancers",
       "location": "[parameters('location')]",
@@ -239,7 +239,7 @@
       "dependsOn": [
         "[concat('Microsoft.Network/loadBalancers/',variables('publicLBName'))]"
       ],
-      "apiVersion": "2015-05-01-preview",
+      "apiVersion": "2015-06-15",
       "properties": {
         "ipConfigurations": [
           {
@@ -272,7 +272,7 @@
       "dependsOn": [
         "[concat('Microsoft.Network/loadBalancers/',variables('publicLBName'))]"
       ],
-      "apiVersion": "2015-05-01-preview",
+      "apiVersion": "2015-06-15",
       "properties": {
         "ipConfigurations": [
           {
@@ -289,7 +289,7 @@
       }
     },
     {
-      "apiVersion": "2015-05-01-preview",
+      "apiVersion": "2015-06-15",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[concat(parameters('VMNamePrefix'), copyindex())]",
       "location": "[parameters('location')]",

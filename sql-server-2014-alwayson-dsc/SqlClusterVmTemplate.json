@@ -182,11 +182,11 @@
     {
       "type": "Microsoft.Compute/availabilitySets",
       "name": "[parameters('AvailabilitySetName')]",
-      "apiVersion": "2015-05-01-preview",
+      "apiVersion": "2015-06-15",
       "location": "[parameters('location')]"
     },
     {
-			"apiVersion": "2015-05-01-preview",
+			"apiVersion": "2015-06-15",
 			"name": "[variables('publicLBName')]",
 			"type": "Microsoft.Network/loadBalancers",
 			"location": "[parameters('location')]",
@@ -248,7 +248,7 @@
 			"name": "[concat(variables('SqlNicName'), copyindex())]",
 			"type": "Microsoft.Network/networkInterfaces",
 			"location": "[parameters('location')]",
-			"apiVersion": "2015-05-01-preview",
+			"apiVersion": "2015-06-15",
 			"copy": {
 				"name": "nicLoop",
 				"count": 2
@@ -276,7 +276,7 @@
 			}
 		},
     {
-			"apiVersion": "2015-05-01-preview",
+			"apiVersion": "2015-06-15",
 			"type": "Microsoft.Compute/virtualMachines",
 			"name": "[concat(parameters('VMNamePrefix'), copyindex())]",
 			"location": "[parameters('location')]",
