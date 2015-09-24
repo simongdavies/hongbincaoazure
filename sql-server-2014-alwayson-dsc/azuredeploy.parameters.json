@@ -3,28 +3,31 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "newStorageAccountNamePrefix": {
-      "value": ""
+      "value": "sdsqlao6"
     },
 
     "vmNamePrefix": {
-      "value": ""
+      "value": "sqlao"
     },
 
      "domainName": {
-      "value": ""
+      "value": "sdsqlao.com"
     },
 
     "dnsPrefix": {
-      "value": ""
+      "value": "sdsqlao6"
     },
     "location": {
-      "value": "West Europe"
+      "value": "West US"
     },
     "adminPassword": {
       "value": ""
     },
     "sqlServerServiceAccountPassword": {
       "value": ""
+    },
+    "assetLocation": {
+      "value": "https://raw.githubusercontent.com/simongdavies/hongbincaoazure/MAS.Workloads1/sql-server-2014-alwayson-dsc"
     }
   }
 }
